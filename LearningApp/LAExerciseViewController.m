@@ -8,7 +8,10 @@
 
 #import "LAExerciseViewController.h"
 #import "LAExerciseItem.h"
+#import "LAResultItem.h"
+#import "AppDelegate.h"
 #import "LAExercise.h"
+#import "LAResult.h"
 
 @interface LAExerciseViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *questionLabel;
@@ -16,13 +19,22 @@
 @property (weak, nonatomic) IBOutlet UIButton *option2Button;
 @property (weak, nonatomic) IBOutlet UIButton *option3Button;
 @property (weak, nonatomic) IBOutlet UIButton *option4Button;
+/***/
+@property (strong, nonatomic) LAResult *result;
+@property (strong, nonatomic) NSManagedObjectContext *context;
 @end
 
 @implementation LAExerciseViewController
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [self updateItem:nil]; // <----- IMPORTANTE!!!
+    [self updateItem:nil];
+    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    _context = appDelegate.managedObjectContext;
+    _result = [LAResult newResult:_context];
+    _result.startDate = [NSDate date];
+    _result.exerciseName = _exercise.name;
+    _result.generalResult = [NSNumber numberWithFloat:0.0];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateItem:) name:@"LADidChangeItem" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(finishExercise) name:@"LAExerciseIsOutOfItems" object:nil];
 }
@@ -32,12 +44,18 @@
 }
 
 - (IBAction)evaluateAnswer:(UIButton *)sender {
-    // check answer at sender.titleLabel.text
+    LAResultItem *item = [LAResultItem newResultItem:_context];
+    item.givenAnswer = sender.titleLabel.text;
+    item.rightAnswer = _exercise.currentItem.rightAnswer;
     UIColor *evaluationColor;
     if ([sender.titleLabel.text isEqualToString:_exercise.currentItem.rightAnswer]) {
         evaluationColor = [UIColor greenColor];
+        item.evaluation = [NSNumber numberWithBool:YES];
+        float resultFloat = _result.generalResult.floatValue + 1.0 / _exercise.items.count;
+        _result.generalResult = [NSNumber numberWithFloat:resultFloat];
     } else {
         evaluationColor = [UIColor redColor];
+        item.evaluation = [NSNumber numberWithBool:NO];
     }
     sender.backgroundColor = evaluationColor;
     [UIView animateWithDuration:0.4 animations:^{
@@ -69,6 +87,8 @@
 }
 
 - (void)finishExercise {
+    _result.finishDate = [NSDate date];
+    [_context save:nil];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

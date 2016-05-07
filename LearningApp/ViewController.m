@@ -7,8 +7,10 @@
 //
 
 #import "LAExerciseViewController.h"
+#import "AppDelegate.h"
 #import "ViewController.h"
 #import "LAExercise.h"
+#import "LAResult.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *exercisesTableView;
@@ -44,6 +46,10 @@
         }
     }];
     [task resume];
+    
+    NSManagedObjectContext *context = ((AppDelegate *)[UIApplication sharedApplication].delegate).managedObjectContext;
+    NSArray *myResults = [LAResult getAllResults:context];
+    NSLog(@"--> %@", myResults);
 }
 
 #pragma mark - TableView data source
