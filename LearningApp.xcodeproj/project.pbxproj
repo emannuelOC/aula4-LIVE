@@ -18,6 +18,8 @@
 		C9FAE8811CDE1A06007C3528 /* LearningAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FAE8801CDE1A06007C3528 /* LearningAppUITests.m */; };
 		C9FAE8901CDE3514007C3528 /* LAExercise.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FAE88F1CDE3514007C3528 /* LAExercise.m */; };
 		C9FAE8931CDE3524007C3528 /* LAExerciseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FAE8921CDE3524007C3528 /* LAExerciseItem.m */; };
+		C9FAE8951CDE57CB007C3528 /* Exercise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9FAE8941CDE57CB007C3528 /* Exercise.storyboard */; };
+		C9FAE8981CDE5A50007C3528 /* LAExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FAE8971CDE5A50007C3528 /* LAExerciseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,9 @@
 		C9FAE88F1CDE3514007C3528 /* LAExercise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAExercise.m; sourceTree = "<group>"; };
 		C9FAE8911CDE3524007C3528 /* LAExerciseItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAExerciseItem.h; sourceTree = "<group>"; };
 		C9FAE8921CDE3524007C3528 /* LAExerciseItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAExerciseItem.m; sourceTree = "<group>"; };
+		C9FAE8941CDE57CB007C3528 /* Exercise.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Exercise.storyboard; sourceTree = "<group>"; };
+		C9FAE8961CDE5A50007C3528 /* LAExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAExerciseViewController.h; sourceTree = "<group>"; };
+		C9FAE8971CDE5A50007C3528 /* LAExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAExerciseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +123,9 @@
 				C9FAE8911CDE3524007C3528 /* LAExerciseItem.h */,
 				C9FAE8921CDE3524007C3528 /* LAExerciseItem.m */,
 				C9FAE8611CDE1A05007C3528 /* Main.storyboard */,
+				C9FAE8941CDE57CB007C3528 /* Exercise.storyboard */,
+				C9FAE8961CDE5A50007C3528 /* LAExerciseViewController.h */,
+				C9FAE8971CDE5A50007C3528 /* LAExerciseViewController.m */,
 				C9FAE8671CDE1A05007C3528 /* Assets.xcassets */,
 				C9FAE8691CDE1A05007C3528 /* LaunchScreen.storyboard */,
 				C9FAE86C1CDE1A05007C3528 /* Info.plist */,
@@ -258,6 +266,7 @@
 			files = (
 				C9FAE86B1CDE1A05007C3528 /* LaunchScreen.storyboard in Resources */,
 				C9FAE8681CDE1A05007C3528 /* Assets.xcassets in Resources */,
+				C9FAE8951CDE57CB007C3528 /* Exercise.storyboard in Resources */,
 				C9FAE8631CDE1A05007C3528 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +297,7 @@
 				C9FAE85D1CDE1A05007C3528 /* AppDelegate.m in Sources */,
 				C9FAE8931CDE3524007C3528 /* LAExerciseItem.m in Sources */,
 				C9FAE85A1CDE1A05007C3528 /* main.m in Sources */,
+				C9FAE8981CDE5A50007C3528 /* LAExerciseViewController.m in Sources */,
 				C9FAE8901CDE3514007C3528 /* LAExercise.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
