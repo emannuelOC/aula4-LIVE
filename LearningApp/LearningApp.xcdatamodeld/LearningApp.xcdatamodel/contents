@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15E65" minimumToolsVersion="Automatic">
+    <entity name="LAResult" representedClassName="LAResult" syncable="YES">
+        <attribute name="exerciseName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="finishDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="generalResult" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="resultItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LAResultItem" inverseName="result" inverseEntity="LAResultItem" syncable="YES"/>
+    </entity>
+    <entity name="LAResultItem" representedClassName="LAResultItem" syncable="YES">
+        <attribute name="evaluation" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="givenAnswer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rightAnswer" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="result" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LAResult" inverseName="resultItems" inverseEntity="LAResult" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="LAResult" positionX="-360" positionY="-18" width="128" height="118"/>
+        <element name="LAResultItem" positionX="-182" positionY="-18" width="128" height="103"/>
+    </elements>
 </model>

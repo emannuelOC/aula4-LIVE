@@ -20,6 +20,10 @@
 		C9FAE8931CDE3524007C3528 /* LAExerciseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FAE8921CDE3524007C3528 /* LAExerciseItem.m */; };
 		C9FAE8951CDE57CB007C3528 /* Exercise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9FAE8941CDE57CB007C3528 /* Exercise.storyboard */; };
 		C9FAE8981CDE5A50007C3528 /* LAExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FAE8971CDE5A50007C3528 /* LAExerciseViewController.m */; };
+		C9FAE8A11CDE7F7C007C3528 /* LAResultItem+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FAE89A1CDE7F7C007C3528 /* LAResultItem+CoreDataProperties.m */; };
+		C9FAE8A21CDE7F7C007C3528 /* LAResultItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FAE89C1CDE7F7C007C3528 /* LAResultItem.m */; };
+		C9FAE8A31CDE7F7C007C3528 /* LAResult+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FAE89E1CDE7F7C007C3528 /* LAResult+CoreDataProperties.m */; };
+		C9FAE8A41CDE7F7C007C3528 /* LAResult.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FAE8A01CDE7F7C007C3528 /* LAResult.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,13 +61,21 @@
 		C9FAE87C1CDE1A06007C3528 /* LearningAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearningAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9FAE8801CDE1A06007C3528 /* LearningAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LearningAppUITests.m; sourceTree = "<group>"; };
 		C9FAE8821CDE1A06007C3528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C9FAE88E1CDE3514007C3528 /* LAExercise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAExercise.h; sourceTree = "<group>"; };
-		C9FAE88F1CDE3514007C3528 /* LAExercise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAExercise.m; sourceTree = "<group>"; };
-		C9FAE8911CDE3524007C3528 /* LAExerciseItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAExerciseItem.h; sourceTree = "<group>"; };
-		C9FAE8921CDE3524007C3528 /* LAExerciseItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAExerciseItem.m; sourceTree = "<group>"; };
+		C9FAE88E1CDE3514007C3528 /* LAExercise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LAExercise.h; path = LearningApp/LAExercise.h; sourceTree = "<group>"; };
+		C9FAE88F1CDE3514007C3528 /* LAExercise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LAExercise.m; path = LearningApp/LAExercise.m; sourceTree = "<group>"; };
+		C9FAE8911CDE3524007C3528 /* LAExerciseItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LAExerciseItem.h; path = LearningApp/LAExerciseItem.h; sourceTree = "<group>"; };
+		C9FAE8921CDE3524007C3528 /* LAExerciseItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LAExerciseItem.m; path = LearningApp/LAExerciseItem.m; sourceTree = "<group>"; };
 		C9FAE8941CDE57CB007C3528 /* Exercise.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Exercise.storyboard; sourceTree = "<group>"; };
 		C9FAE8961CDE5A50007C3528 /* LAExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAExerciseViewController.h; sourceTree = "<group>"; };
 		C9FAE8971CDE5A50007C3528 /* LAExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAExerciseViewController.m; sourceTree = "<group>"; };
+		C9FAE8991CDE7F7C007C3528 /* LAResultItem+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "LAResultItem+CoreDataProperties.h"; path = "LearningApp/LAResultItem+CoreDataProperties.h"; sourceTree = "<group>"; };
+		C9FAE89A1CDE7F7C007C3528 /* LAResultItem+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "LAResultItem+CoreDataProperties.m"; path = "LearningApp/LAResultItem+CoreDataProperties.m"; sourceTree = "<group>"; };
+		C9FAE89B1CDE7F7C007C3528 /* LAResultItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LAResultItem.h; path = LearningApp/LAResultItem.h; sourceTree = "<group>"; };
+		C9FAE89C1CDE7F7C007C3528 /* LAResultItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LAResultItem.m; path = LearningApp/LAResultItem.m; sourceTree = "<group>"; };
+		C9FAE89D1CDE7F7C007C3528 /* LAResult+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "LAResult+CoreDataProperties.h"; path = "LearningApp/LAResult+CoreDataProperties.h"; sourceTree = "<group>"; };
+		C9FAE89E1CDE7F7C007C3528 /* LAResult+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "LAResult+CoreDataProperties.m"; path = "LearningApp/LAResult+CoreDataProperties.m"; sourceTree = "<group>"; };
+		C9FAE89F1CDE7F7C007C3528 /* LAResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LAResult.h; path = LearningApp/LAResult.h; sourceTree = "<group>"; };
+		C9FAE8A01CDE7F7C007C3528 /* LAResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LAResult.m; path = LearningApp/LAResult.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +106,7 @@
 		C9FAE84C1CDE1A05007C3528 = {
 			isa = PBXGroup;
 			children = (
+				C9FAE8A51CDE823E007C3528 /* CoreDataProperties */,
 				C9FAE8571CDE1A05007C3528 /* LearningApp */,
 				C9FAE8741CDE1A06007C3528 /* LearningAppTests */,
 				C9FAE87F1CDE1A06007C3528 /* LearningAppUITests */,
@@ -114,22 +127,9 @@
 		C9FAE8571CDE1A05007C3528 /* LearningApp */ = {
 			isa = PBXGroup;
 			children = (
-				C9FAE85B1CDE1A05007C3528 /* AppDelegate.h */,
-				C9FAE85C1CDE1A05007C3528 /* AppDelegate.m */,
-				C9FAE85E1CDE1A05007C3528 /* ViewController.h */,
-				C9FAE85F1CDE1A05007C3528 /* ViewController.m */,
-				C9FAE88E1CDE3514007C3528 /* LAExercise.h */,
-				C9FAE88F1CDE3514007C3528 /* LAExercise.m */,
-				C9FAE8911CDE3524007C3528 /* LAExerciseItem.h */,
-				C9FAE8921CDE3524007C3528 /* LAExerciseItem.m */,
-				C9FAE8611CDE1A05007C3528 /* Main.storyboard */,
-				C9FAE8941CDE57CB007C3528 /* Exercise.storyboard */,
-				C9FAE8961CDE5A50007C3528 /* LAExerciseViewController.h */,
-				C9FAE8971CDE5A50007C3528 /* LAExerciseViewController.m */,
-				C9FAE8671CDE1A05007C3528 /* Assets.xcassets */,
-				C9FAE8691CDE1A05007C3528 /* LaunchScreen.storyboard */,
-				C9FAE86C1CDE1A05007C3528 /* Info.plist */,
-				C9FAE8641CDE1A05007C3528 /* LearningApp.xcdatamodeld */,
+				C9FAE8A61CDE824A007C3528 /* Model */,
+				C9FAE8A71CDE8261007C3528 /* Controllers */,
+				C9FAE8A81CDE8282007C3528 /* View */,
 				C9FAE8581CDE1A05007C3528 /* Supporting Files */,
 			);
 			path = LearningApp;
@@ -138,6 +138,11 @@
 		C9FAE8581CDE1A05007C3528 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C9FAE85B1CDE1A05007C3528 /* AppDelegate.h */,
+				C9FAE85C1CDE1A05007C3528 /* AppDelegate.m */,
+				C9FAE8671CDE1A05007C3528 /* Assets.xcassets */,
+				C9FAE8691CDE1A05007C3528 /* LaunchScreen.storyboard */,
+				C9FAE86C1CDE1A05007C3528 /* Info.plist */,
 				C9FAE8591CDE1A05007C3528 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -159,6 +164,54 @@
 				C9FAE8821CDE1A06007C3528 /* Info.plist */,
 			);
 			path = LearningAppUITests;
+			sourceTree = "<group>";
+		};
+		C9FAE8A51CDE823E007C3528 /* CoreDataProperties */ = {
+			isa = PBXGroup;
+			children = (
+				C9FAE8991CDE7F7C007C3528 /* LAResultItem+CoreDataProperties.h */,
+				C9FAE89A1CDE7F7C007C3528 /* LAResultItem+CoreDataProperties.m */,
+				C9FAE89D1CDE7F7C007C3528 /* LAResult+CoreDataProperties.h */,
+				C9FAE89E1CDE7F7C007C3528 /* LAResult+CoreDataProperties.m */,
+			);
+			name = CoreDataProperties;
+			sourceTree = "<group>";
+		};
+		C9FAE8A61CDE824A007C3528 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C9FAE8641CDE1A05007C3528 /* LearningApp.xcdatamodeld */,
+				C9FAE88E1CDE3514007C3528 /* LAExercise.h */,
+				C9FAE88F1CDE3514007C3528 /* LAExercise.m */,
+				C9FAE8911CDE3524007C3528 /* LAExerciseItem.h */,
+				C9FAE8921CDE3524007C3528 /* LAExerciseItem.m */,
+				C9FAE89B1CDE7F7C007C3528 /* LAResultItem.h */,
+				C9FAE89C1CDE7F7C007C3528 /* LAResultItem.m */,
+				C9FAE89F1CDE7F7C007C3528 /* LAResult.h */,
+				C9FAE8A01CDE7F7C007C3528 /* LAResult.m */,
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		C9FAE8A71CDE8261007C3528 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9FAE85E1CDE1A05007C3528 /* ViewController.h */,
+				C9FAE85F1CDE1A05007C3528 /* ViewController.m */,
+				C9FAE8961CDE5A50007C3528 /* LAExerciseViewController.h */,
+				C9FAE8971CDE5A50007C3528 /* LAExerciseViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C9FAE8A81CDE8282007C3528 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C9FAE8611CDE1A05007C3528 /* Main.storyboard */,
+				C9FAE8941CDE57CB007C3528 /* Exercise.storyboard */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,11 +347,15 @@
 			files = (
 				C9FAE8601CDE1A05007C3528 /* ViewController.m in Sources */,
 				C9FAE8661CDE1A05007C3528 /* LearningApp.xcdatamodeld in Sources */,
+				C9FAE8A21CDE7F7C007C3528 /* LAResultItem.m in Sources */,
+				C9FAE8A41CDE7F7C007C3528 /* LAResult.m in Sources */,
 				C9FAE85D1CDE1A05007C3528 /* AppDelegate.m in Sources */,
 				C9FAE8931CDE3524007C3528 /* LAExerciseItem.m in Sources */,
 				C9FAE85A1CDE1A05007C3528 /* main.m in Sources */,
 				C9FAE8981CDE5A50007C3528 /* LAExerciseViewController.m in Sources */,
+				C9FAE8A11CDE7F7C007C3528 /* LAResultItem+CoreDataProperties.m in Sources */,
 				C9FAE8901CDE3514007C3528 /* LAExercise.m in Sources */,
+				C9FAE8A31CDE7F7C007C3528 /* LAResult+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,7 +607,8 @@
 				C9FAE8651CDE1A05007C3528 /* LearningApp.xcdatamodel */,
 			);
 			currentVersion = C9FAE8651CDE1A05007C3528 /* LearningApp.xcdatamodel */;
-			path = LearningApp.xcdatamodeld;
+			name = LearningApp.xcdatamodeld;
+			path = LearningApp/LearningApp.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
