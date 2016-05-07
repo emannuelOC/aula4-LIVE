@@ -16,6 +16,8 @@
 		C9FAE86B1CDE1A05007C3528 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9FAE8691CDE1A05007C3528 /* LaunchScreen.storyboard */; };
 		C9FAE8761CDE1A06007C3528 /* LearningAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FAE8751CDE1A06007C3528 /* LearningAppTests.m */; };
 		C9FAE8811CDE1A06007C3528 /* LearningAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FAE8801CDE1A06007C3528 /* LearningAppUITests.m */; };
+		C9FAE8901CDE3514007C3528 /* LAExercise.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FAE88F1CDE3514007C3528 /* LAExercise.m */; };
+		C9FAE8931CDE3524007C3528 /* LAExerciseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FAE8921CDE3524007C3528 /* LAExerciseItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		C9FAE87C1CDE1A06007C3528 /* LearningAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearningAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9FAE8801CDE1A06007C3528 /* LearningAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LearningAppUITests.m; sourceTree = "<group>"; };
 		C9FAE8821CDE1A06007C3528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9FAE88E1CDE3514007C3528 /* LAExercise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAExercise.h; sourceTree = "<group>"; };
+		C9FAE88F1CDE3514007C3528 /* LAExercise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAExercise.m; sourceTree = "<group>"; };
+		C9FAE8911CDE3524007C3528 /* LAExerciseItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAExerciseItem.h; sourceTree = "<group>"; };
+		C9FAE8921CDE3524007C3528 /* LAExerciseItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAExerciseItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,10 @@
 				C9FAE85C1CDE1A05007C3528 /* AppDelegate.m */,
 				C9FAE85E1CDE1A05007C3528 /* ViewController.h */,
 				C9FAE85F1CDE1A05007C3528 /* ViewController.m */,
+				C9FAE88E1CDE3514007C3528 /* LAExercise.h */,
+				C9FAE88F1CDE3514007C3528 /* LAExercise.m */,
+				C9FAE8911CDE3524007C3528 /* LAExerciseItem.h */,
+				C9FAE8921CDE3524007C3528 /* LAExerciseItem.m */,
 				C9FAE8611CDE1A05007C3528 /* Main.storyboard */,
 				C9FAE8671CDE1A05007C3528 /* Assets.xcassets */,
 				C9FAE8691CDE1A05007C3528 /* LaunchScreen.storyboard */,
@@ -276,7 +286,9 @@
 				C9FAE8601CDE1A05007C3528 /* ViewController.m in Sources */,
 				C9FAE8661CDE1A05007C3528 /* LearningApp.xcdatamodeld in Sources */,
 				C9FAE85D1CDE1A05007C3528 /* AppDelegate.m in Sources */,
+				C9FAE8931CDE3524007C3528 /* LAExerciseItem.m in Sources */,
 				C9FAE85A1CDE1A05007C3528 /* main.m in Sources */,
+				C9FAE8901CDE3514007C3528 /* LAExercise.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
