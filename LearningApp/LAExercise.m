@@ -9,7 +9,9 @@
 #import "LAExercise.h"
 #import "LAExerciseItem.h"
 
-@implementation LAExercise
+@implementation LAExercise {
+    int index;
+}
 
 - (LAExercise *)initWithName:(NSString *)name exerciseDescription:(NSString *)description andItems:(NSArray *)items {
     self = [super init];
@@ -19,7 +21,22 @@
     _name = name;
     _exerciseDescription = description;
     _items = items;
+    index = 0;
+    if (_items && _items.count > 0) {
+        _currentItem = _items[index];
+    }
     return self;
+}
+
+- (void)stepForward {
+    index++;
+    if (index >= _items.count) {
+        _currentItem = nil;
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"LAExerciseIsOutOfItems" object:self];
+    } else {
+        _currentItem = _items[index];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"LADidChangeItem" object:self userInfo:@{@"curentItem":_currentItem}];
+    }
 }
 
 + (LAExercise *)exerciseWithDictionary:(NSDictionary *)dictionary {

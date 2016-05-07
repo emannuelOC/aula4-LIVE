@@ -63,11 +63,20 @@
                     <navigationItem key="navigationItem" title="Exercises" id="Y5n-jY-m29"/>
                     <connections>
                         <outlet property="exercisesTableView" destination="Sy1-8u-VRR" id="YwR-CR-F2t"/>
+                        <segue destination="E8l-mf-Kxg" kind="presentation" identifier="StartExercise" id="EnD-ti-46R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="952" y="237"/>
+        </scene>
+        <!--Exercise-->
+        <scene sceneID="3Qd-lb-gd9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Exercise" id="E8l-mf-Kxg" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nBr-M9-Ton" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="952.5" y="725"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XFn-Nf-RdO">

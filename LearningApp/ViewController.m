@@ -6,6 +6,7 @@
 //  Copyright © 2016 Emannuel Carvalho. All rights reserved.
 //
 
+#import "LAExerciseViewController.h"
 #import "ViewController.h"
 #import "LAExercise.h"
 
@@ -56,31 +57,26 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    /*
-     1. criar a cell (dequeueReusable...)
-     2. configurar (cell.textLabel...)
-     3. retornar a cell
-    */
-    
-    // 1
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ExerciseCell" forIndexPath:indexPath];
-    // 2
     LAExercise *exercise = _exercises[indexPath.row];
     cell.textLabel.text = exercise.name;
-    //3
     return cell;
 }
 
 #pragma mark - TableView delegate
 
-/*
- 
- 1. quantas sections
- 2. quantas linhas
- 3. a célula pra linha x
- 
-*/
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    LAExercise *exercise = _exercises[indexPath.row];
+    [self performSegueWithIdentifier:@"StartExercise" sender:exercise];
+}
 
+#pragma mark - Navigation
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    LAExercise *exercise = (LAExercise *)sender;
+    LAExerciseViewController *vc = segue.destinationViewController;
+    vc.exercise = exercise;
+}
 
 
 

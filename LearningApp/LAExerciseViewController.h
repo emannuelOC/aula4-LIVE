@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LAExercise.h"
 
 @interface LAExerciseViewController : UIViewController
-
+@property (strong, nonatomic) LAExercise *exercise;
 @end
